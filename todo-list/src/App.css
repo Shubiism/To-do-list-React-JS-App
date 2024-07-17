@@ -1,0 +1,153 @@
+/* src/components/App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #8758ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  max-width: 400px;
+  background: #8e8efc;
+  margin-top: 3rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.TodoForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  flex: 1;
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #8758ff;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #ffffff80;
+  /* Adjusted placeholder text opacity */
+}
+
+.todo-btn {
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.55rem 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.todo-btn:hover {
+  background: #6742aa;
+}
+
+.Filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.filter-btn {
+  background: none;
+  color: #fff;
+  border: none;
+  padding: 0.25rem 1rem;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+
+.filter-btn:hover {
+  color: #c5aeff;
+}
+
+.filter-btn.active {
+  color: #c5aeff;
+}
+
+.TodoList {
+  margin-top: 1rem;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8758ff;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Todo .task {
+  flex: 1;
+  color: #fff;
+  /* Adjusted text color */
+  overflow-wrap: break-word;
+  /* Ensure long task names wrap */
+}
+
+.completed .task {
+  text-decoration: line-through;
+  color: #c5aeff;
+}
+
+.fa-trash,
+.fa-check {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.fa-trash:hover,
+.fa-check:hover {
+  color: #c5aeff;
+}
+
+/* Example CSS for the to-do list heading */
+.todo-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  /* Dark gray text */
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid #8758ff;
+  /* Purple border */
+  display: inline-block;
+}
